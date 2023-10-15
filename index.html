@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+
+    <title>Flash Card</title>
+</head>
+<body>
+    <div class="container">
+        <h1 class="main-text">Flash Card APP</h1>
+        <div class="flip-card" onclick="flipCard()">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <h3 class="Dtext">Question</h3>
+              <h3 id="question" class="card-text">Question</h3>
+              <p class="Ptext">Click to flip</p>
+            </div>
+            <div class="flip-card-back">
+              <h3 class="Dtext">Answer</h3>
+              <h3 id="answer" class="card-text">Answer</h3>
+            </div>
+          </div>
+        </div>
+      
+        <div class="button-container">
+          <button id="prevBtn" onclick="showPreviousQuestion()" class="btn"> <i class="fas fa-chevron-left"></i>Previous</button>
+          <button id="nextBtn" onclick="showNextQuestion()" class="btn"> Next <i class="fas fa-chevron-right"></i></button>
+        </div>
+      </div>
+      
+      
+
+    <script src="script.js"></script>
+        
+</body>
+</html>
